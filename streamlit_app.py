@@ -1,5 +1,16 @@
 import streamlit
 
+import pandas
+
+import requests
+
+import snowflake.connector
+
+from urllib.error import URLError
+
+
+#import streamlit
+
 streamlit.title('My Parents New Healthy Diner')
 
 streamlit.header('🍜Breakfast Menu')
@@ -64,15 +75,7 @@ my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from st
 
 streamlit.stop()
 
-import streamlit
-
-import pandas
-
-import requests
-
 import snowflake.connector
-
-from urllib.error import URLError
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
