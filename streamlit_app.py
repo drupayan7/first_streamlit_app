@@ -38,7 +38,7 @@ def set_png_as_page_bg(png_file):
     return
 
 
-set_png_as_page_bg('https://image.shutterstock.com/image-vector/abraham-lincoln-hand-drawn-vector-260nw-784678423.jpg')
+set_png_as_page_bg('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')
 
 #import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
