@@ -36,7 +36,7 @@ def set_png_as_page_bg(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
-set_png_as_page_bg('./src/static/img/background.png')
+set_png_as_page_bg('https://www.pexels.com/photo/close-up-photo-of-red-flowers-1961778/')
 
 #import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
