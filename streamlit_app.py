@@ -27,7 +27,7 @@ def set_background(png_file):
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("data:https://images.unsplash.com/photo-1542281286-9e0a16bb7366;base64,%s");
+    background-image: url("data:https://images.unsplash.com/photo-1542281286-9e0a16bb7366.png;base64,%s");
     background-size: cover;
     }
     </style>
