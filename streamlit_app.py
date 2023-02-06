@@ -22,14 +22,17 @@ streamlit.text('🌮🥑Hard-Boiled Free Range Egg')
 streamlit.header('🍜🌮 Build Your Own Fruit Smoothie 🥗🍌')
 
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-background-size: cover;
-}
-</style>
-'''
+def set_background(png_file):
+    bin_str = get_base64(png_file)
+    page_bg_img = '''
+    <style>
+    .stApp {
+    background-image: url("data:https://images.unsplash.com/photo-1542281286-9e0a16bb7366;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
