@@ -21,6 +21,18 @@ streamlit.text('🌮🥑Hard-Boiled Free Range Egg')
 
 streamlit.header('🍜🌮 Build Your Own Fruit Smoothie 🥗🍌')
 
+
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 #import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
